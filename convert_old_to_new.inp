@@ -1,0 +1,33 @@
+44.0 11.0
+cubic
+bohr
+0.0000 5.1306 5.1306
+5.1306 0.0000 5.1306
+5.1306 5.1306 0.0000
+crystal
+2
+-0.125 -0.125 -0.125 14
+ 0.125  0.125  0.125 14
+2 2 2
+
+# example input file for convert_old_to_new.x for Si
+# coordinates are crystal, in units of the lattice vectors
+# Note: you need high precision in the lattice vectors
+# so that the volume calculated from them matches the volume
+# in the input file
+# The kgrid in the last line is only read if the kgrid in
+# the wfn file contains a zero, since pre-r307 paratec writes
+# 0 0 0 for shifted grids.
+
+# charge-density and wave-function cutoffs (in Ry)
+# cubic or hexagonal symmetry group
+# units of the lattice vectors (bohr, angstrom)
+# a1x a1y a1z
+# a2x a2y a2z
+# a3x a3y a3z
+# units of the atomic positions (bohr, angstrom, crystal)
+# number of atoms
+# x1, y1, z1, atomic number 1
+# x2, y2, z2, atomic number 2
+# etc.
+# kgrid_x kgrid_y kgrid_z
