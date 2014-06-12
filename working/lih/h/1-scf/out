@@ -1,0 +1,129 @@
+
+     Program PWSCF v.5.1 starts on 12Jun2014 at 15:38:19 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Waiting for input...
+     Reading input from standard input
+     Message from routine read_cards :
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     gamma-point specific algorithms are used
+     Message from routine setup:
+     the system is metallic, specify occupations
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        3341    3341    845               145165   145165   18037
+     Tot        1671    1671    423
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      13.2280  a.u.
+     unit-cell volume          =    2314.6352 (a.u.)^3
+     number of atoms/cell      =            1
+     number of atomic types    =            1
+     number of electrons       =         1.00
+     number of Kohn-Sham states=           10
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     240.0000  Ry
+     convergence threshold     =      1.0E-10
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = SLA-PW-PBX-PBC ( 1  4  3  4 0)
+
+     celldm(1)=  13.228000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for  H read from file:
+     ./H.UPF
+     MD5 check sum: 5f350582108a937bec95f27f5610ab08
+     Pseudo is Norm-conserving, Zval =  1.0
+     Generated in analytical, separable form
+     Using radial grid of  929 points,  0 beta functions with: 
+
+     atomic species   valence    mass     pseudopotential
+        H              1.00     1.07000      H( 1.00)
+
+      8 Sym. Ops. (no inversion) found
+          (note: 40 additional sym.ops. were found but ignored
+           their fractional translations are incommensurate with FFT grid)
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (  -0.0805866   0.0000000   0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:    72583 G-vectors     FFT dimensions: (  72,  72,  72)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions         1.38 Mb     (    9019,   10)
+        NL pseudopotentials             0.00 Mb     (    9019,    0)
+        Each V/rho on FFT grid          5.70 Mb     (  373248)
+        Each G-vector array             0.55 Mb     (   72583)
+        G-vector shells                 0.01 Mb     (     888)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions         2.75 Mb     (    9019,   40)
+        Each subspace H/S matrix        0.01 Mb     (      40,   40)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       0,   10)
+        Arrays for rho mixing          45.56 Mb     (  373248,    8)
+
+     Initial potential from superposition of free atoms
+     Check: negative starting charge=   -0.000326
+
+     starting charge    0.99999, renormalised to    1.00000
+
+     negative rho (up, down):  3.260E-04 0.000E+00
+     Starting wfc are    1 randomized atomic wfcs +    9 random wfc
+
+     total cpu time spent up to now is        0.4 secs
+
+     per-process dynamical memory:    43.5 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    60.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  7.0
+
+     negative rho (up, down):  9.781E-05 0.000E+00
+
+     total cpu time spent up to now is        1.1 secs
+
+     WARNING: integrated charge=     0.30000000, expected=     1.00000000
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine electrons (1):
+     charge is wrong: smearing is needed
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...

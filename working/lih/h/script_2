@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+#edit these lines as needed
+QEPATH=$HOME/espresso-5.0
+PW=$QEPATH/bin/pw.x
+PW2BGW=$QEPATH/bin/pw2bgw.x
+
+# put argument for number of procs here too if needed, e.g. -n 8
+MPIRUN="mpirun"
+###############################################################################
+cd ./1-scf
+$MPIRUN $PW -in ./in &> ./out
+cd ..
+
+
+
+#BEGIN_INTERNAL_ONLY
+#       PH=$QEPATH/bin/ph.x
+#       cd ./11-phonon
+#       $MPIRUN $PH -in ./in &> ./out
+cd ..
+#
+#END_INTERNAL_ONLY
+cd ./2-wfn
+$MPIRUN $PW -in ./in &> ./out
+$MPIRUN $PW2BGW -in ./pp_in &> ./pp_out
+#BEGIN_INTERNAL_ONLY
+#        $MPIRUN $PW2BGW -in ./pp_dfpt_in &> ./pp_dfpt_out
+#END_INTERNAL_ONLY
+cd ..
+#
