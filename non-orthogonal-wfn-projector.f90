@@ -12,7 +12,7 @@
 ! k-points by symmetry operations.
 !
 !=============================================================
-
+!
 
 
 #include "f_defs.h"
