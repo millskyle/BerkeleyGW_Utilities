@@ -12,9 +12,7 @@
 ! k-points by symmetry operations.
 !
 !=============================================================
-!=== Let's see if this gets committed
 
-here
 
 
 #include "f_defs.h"
