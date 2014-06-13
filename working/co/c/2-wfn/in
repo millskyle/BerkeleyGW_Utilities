@@ -1,5 +1,5 @@
 &control
-   prefix = 'co'
+   prefix = '!PREFIX!'
    calculation = 'bands'
    restart_mode = 'from_scratch'
    wf_collect = .true.
@@ -12,10 +12,10 @@
 &system
    ibrav = 0
    celldm(1) = 13.228
-   nat = 2
-   ntyp = 2
-   nbnd = 10
-   ecutwfc = 60.0
+   nat = 1
+   ntyp = 1
+   nbnd = 15
+   ecutwfc = 160.0
 /
 &electrons
    electron_maxstep = 100
@@ -34,10 +34,8 @@ CELL_PARAMETERS
        0.000000000   0.000000000   1.000000000
 ATOMIC_SPECIES
    C  12.011  C.UPF
-   O  15.999  O.UPF
 ATOMIC_POSITIONS bohr
    C  -1.066000000   0.000000000   0.000000000
-   O   1.066000000   0.000000000   0.000000000
 K_POINTS crystal
   1
   0.000000000  0.000000000  0.000000000  1.0

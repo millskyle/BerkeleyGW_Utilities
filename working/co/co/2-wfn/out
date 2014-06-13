@@ -1,0 +1,652 @@
+
+     Program PWSCF v.5.1 starts on 13Jun2014 at 15: 1:34 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+
+     Program PWSCF v.5.1 starts on 13Jun2014 at 15: 1:34 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Reading input from in_new
+     Reading input from in_new
+
+     Program PWSCF v.5.1 starts on 13Jun2014 at 15: 1:34 
+
+     Program PWSCF v.5.1 starts on 13Jun2014 at 15: 1:34 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+
+     Serial version
+     Serial version
+     Reading input from in_new
+     Reading input from in_new
+     Message from routine read_cards :
+     Message from routine read_cards :
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./co.save/
+
+     Atomic positions and unit cell read from directory:
+     ./co.save/
+     Message from routine read_cards :
+     Message from routine read_cards :
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+     DEPRECATED: no units specified in CELL_PARAMETERS card
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./co.save/
+
+     Atomic positions and unit cell read from directory:
+     ./co.save/
+
+
+
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        8929    8929   2233               632851   632851   79117
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        8929    8929   2233               632851   632851   79117
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        8929    8929   2233               632851   632851   79117
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        8929    8929   2233               632851   632851   79117
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      13.2280  a.u.
+     unit-cell volume          =    2314.6352 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     160.0000  Ry
+     charge density cutoff     =     640.0000  Ry
+     Exchange-correlation      = PZ ( 1  1  0  0 0)
+
+     celldm(1)=  13.228000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for  C read from file:
+     ./C.UPF
+     MD5 check sum: 069fdc73ccf29716ce93193576c2ec17
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1073 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     PseudoPot. # 2 for  O read from file:
+     ./O.UPF
+     MD5 check sum: 9e975bd35c3702830f06a582fb8e173f
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1095 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01100      C( 1.00)
+        O              6.00    15.99900      O( 1.00)
+
+      8 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (  -0.0805866   0.0000000   0.0000000  )
+         2           O   tau(   2) = (   0.0805866   0.0000000   0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   632851 G-vectors     FFT dimensions: ( 108, 108, 108)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions        18.11 Mb     (   79117,   15)
+        NL pseudopotentials             9.66 Mb     (   79117,    8)
+        Each V/rho on FFT grid         19.22 Mb     ( 1259712)
+        Each G-vector array             4.83 Mb     (  632851)
+        G-vector shells                 0.02 Mb     (    2367)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions        72.43 Mb     (   79117,   60)
+        Each subspace H/S matrix        0.05 Mb     (      60,   60)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       8,   15)
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      13.2280  a.u.
+     unit-cell volume          =    2314.6352 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     160.0000  Ry
+     charge density cutoff     =     640.0000  Ry
+     Exchange-correlation      = PZ ( 1  1  0  0 0)
+
+     celldm(1)=  13.228000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for  C read from file:
+     ./C.UPF
+     MD5 check sum: 069fdc73ccf29716ce93193576c2ec17
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1073 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     PseudoPot. # 2 for  O read from file:
+     ./O.UPF
+     MD5 check sum: 9e975bd35c3702830f06a582fb8e173f
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1095 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01100      C( 1.00)
+        O              6.00    15.99900      O( 1.00)
+
+      8 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (  -0.0805866   0.0000000   0.0000000  )
+         2           O   tau(   2) = (   0.0805866   0.0000000   0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   632851 G-vectors     FFT dimensions: ( 108, 108, 108)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions        18.11 Mb     (   79117,   15)
+        NL pseudopotentials             9.66 Mb     (   79117,    8)
+        Each V/rho on FFT grid         19.22 Mb     ( 1259712)
+        Each G-vector array             4.83 Mb     (  632851)
+        G-vector shells                 0.02 Mb     (    2367)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions        72.43 Mb     (   79117,   60)
+        Each subspace H/S matrix        0.05 Mb     (      60,   60)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       8,   15)
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      13.2280  a.u.
+     unit-cell volume          =    2314.6352 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     160.0000  Ry
+
+
+     charge density cutoff     =     640.0000  Ry
+     bravais-lattice index     =            0
+     Exchange-correlation      = PZ ( 1  1  0  0 0)
+
+     lattice parameter (alat)  =      13.2280  a.u.
+     celldm(1)=  13.228000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     unit-cell volume          =    2314.6352 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     number of electrons       =        10.00
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =     160.0000  Ry
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+     charge density cutoff     =     640.0000  Ry
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+     Exchange-correlation      = PZ ( 1  1  0  0 0)
+
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+     celldm(1)=  13.228000  celldm(2)=   0.000000  celldm(3)=   0.000000
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+
+     PseudoPot. # 1 for  C read from file:
+     ./C.UPF
+     MD5 check sum: 069fdc73ccf29716ce93193576c2ec17
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+     Using radial grid of 1073 points,  2 beta functions with: 
+                l(1) =   0
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+                l(2) =   1
+
+     PseudoPot. # 2 for  O read from file:
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+     ./O.UPF
+     MD5 check sum: 9e975bd35c3702830f06a582fb8e173f
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+
+     PseudoPot. # 1 for  C read from file:
+     ./C.UPF
+     Using radial grid of 1095 points,  2 beta functions with: 
+                l(1) =   0
+     MD5 check sum: 069fdc73ccf29716ce93193576c2ec17
+     Pseudo is Norm-conserving, Zval =  4.0
+                l(2) =   1
+
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1073 points,  2 beta functions with: 
+     atomic species   valence    mass     pseudopotential
+                l(1) =   0
+                l(2) =   1
+
+     PseudoPot. # 2 for  O read from file:
+        C              4.00    12.01100      C( 1.00)
+        O              6.00    15.99900      O( 1.00)
+     ./O.UPF
+     MD5 check sum: 9e975bd35c3702830f06a582fb8e173f
+
+      8 Sym. Ops. (no inversion) found
+
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+
+
+   Cartesian axes
+     Using radial grid of 1095 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   1
+
+     site n.     atom                  positions (alat units)
+
+     atomic species   valence    mass     pseudopotential
+         1           C   tau(   1) = (  -0.0805866   0.0000000   0.0000000  )
+        C              4.00    12.01100      C( 1.00)
+         2           O   tau(   2) = (   0.0805866   0.0000000   0.0000000  )
+
+        O              6.00    15.99900      O( 1.00)
+
+      8 Sym. Ops. (no inversion) found
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+
+
+
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+   Cartesian axes
+
+     Dense  grid:   632851 G-vectors     FFT dimensions: ( 108, 108, 108)
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (  -0.0805866   0.0000000   0.0000000  )
+         2           O   tau(   2) = (   0.0805866   0.0000000   0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   632851 G-vectors     FFT dimensions: ( 108, 108, 108)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions        18.11 Mb     (   79117,   15)
+        NL pseudopotentials             9.66 Mb     (   79117,    8)
+        Each V/rho on FFT grid         19.22 Mb     ( 1259712)
+        Each G-vector array             4.83 Mb     (  632851)
+        G-vector shells                 0.02 Mb     (    2367)
+     Largest temporary arrays     est. size (Mb)     dimensions
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions        72.43 Mb     (   79117,   60)
+        Kohn-Sham Wavefunctions        18.11 Mb     (   79117,   15)
+        Each subspace H/S matrix        0.05 Mb     (      60,   60)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       8,   15)
+        NL pseudopotentials             9.66 Mb     (   79117,    8)
+        Each V/rho on FFT grid         19.22 Mb     ( 1259712)
+        Each G-vector array             4.83 Mb     (  632851)
+        G-vector shells                 0.02 Mb     (    2367)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions        72.43 Mb     (   79117,   60)
+        Each subspace H/S matrix        0.05 Mb     (      60,   60)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       8,   15)
+
+     The potential is recalculated from file :
+     ./co.save/charge-density.dat
+
+
+     The potential is recalculated from file :
+     ./co.save/charge-density.dat
+
+     Starting wfc are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     Starting wfc are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     The potential is recalculated from file :
+     ./co.save/charge-density.dat
+
+
+     The potential is recalculated from file :
+     ./co.save/charge-density.dat
+
+     Starting wfc are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     Starting wfc are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  1.00E-12,  avg # of iterations = 39.0
+
+     total cpu time spent up to now is       35.6 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 ( 79117 PWs)   bands (ev):
+
+   -28.6777 -13.6035 -11.5385 -11.5385  -8.5587  -1.6465  -1.6465  -0.0627
+     2.3628   2.5311   2.7042   2.7042   2.7887   3.6606   4.8518
+
+     Writing output data file co.save
+
+     init_run     :      1.48s CPU      1.52s WALL (       1 calls)
+     electrons    :     33.72s CPU     33.89s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.36s CPU      0.38s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     33.72s CPU     33.86s WALL (       1 calls)
+     v_of_rho     :      0.24s CPU      0.25s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.02s CPU      0.02s WALL (       1 calls)
+     cegterg      :     32.32s CPU     32.45s WALL (       2 calls)
+
+     Called by *egterg:
+     h_psi        :     22.88s CPU     22.96s WALL (      42 calls)
+     g_psi        :      0.18s CPU      0.18s WALL (      39 calls)
+     cdiaghg      :      0.04s CPU      0.04s WALL (      40 calls)
+
+     Called by h_psi:
+     add_vuspsi   :      0.54s CPU      0.54s WALL (      42 calls)
+
+     General routines
+     calbec       :      0.54s CPU      0.54s WALL (      42 calls)
+     fft          :      0.18s CPU      0.18s WALL (       3 calls)
+     fftw         :     18.95s CPU     19.01s WALL (     712 calls)
+
+
+     PWSCF        :    35.46s CPU        35.76s WALL
+
+
+   This run was terminated on:  15: 2:10  13Jun2014            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+
+     ethr =  1.00E-12,  avg # of iterations = 39.0
+
+     total cpu time spent up to now is       37.7 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 ( 79117 PWs)   bands (ev):
+
+   -28.6777 -13.6035 -11.5385 -11.5385  -8.5587  -1.6465  -1.6465  -0.0627
+     2.3628   2.5311   2.7042   2.7042   2.7887   3.6606   4.8518
+
+     Writing output data file co.save
+
+     init_run     :      0.94s CPU      0.97s WALL (       1 calls)
+     electrons    :     36.48s CPU     36.68s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.24s CPU      0.25s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     36.48s CPU     36.67s WALL (       1 calls)
+     v_of_rho     :      0.16s CPU      0.17s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.02s CPU      0.02s WALL (       1 calls)
+     cegterg      :     35.32s CPU     35.45s WALL (       2 calls)
+
+     Called by *egterg:
+     h_psi        :     24.93s CPU     25.04s WALL (      42 calls)
+     g_psi        :      0.20s CPU      0.20s WALL (      39 calls)
+     cdiaghg      :      0.03s CPU      0.05s WALL (      40 calls)
+
+     Called by h_psi:
+     add_vuspsi   :      0.63s CPU      0.63s WALL (      42 calls)
+
+     General routines
+     calbec       :      0.60s CPU      0.63s WALL (      42 calls)
+     fft          :      0.10s CPU      0.10s WALL (       3 calls)
+     fftw         :     20.75s CPU     20.81s WALL (     712 calls)
+
+
+     PWSCF        :    37.61s CPU        37.91s WALL
+
+
+   This run was terminated on:  15: 2:12  13Jun2014            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+
+     ethr =  1.00E-12,  avg # of iterations = 39.0
+
+     total cpu time spent up to now is       39.5 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 ( 79117 PWs)   bands (ev):
+
+   -28.6777 -13.6035 -11.5385 -11.5385  -8.5587  -1.6465  -1.6465  -0.0627
+     2.3628   2.5311   2.7042   2.7042   2.7887   3.6606   4.8518
+
+     Writing output data file co.save
+
+     init_run     :      0.94s CPU      0.97s WALL (       1 calls)
+     electrons    :     38.21s CPU     38.43s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.24s CPU      0.25s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     38.20s CPU     38.43s WALL (       1 calls)
+     v_of_rho     :      0.17s CPU      0.17s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.02s CPU      0.02s WALL (       1 calls)
+     cegterg      :     37.05s CPU     37.21s WALL (       2 calls)
+
+     Called by *egterg:
+     h_psi        :     25.81s CPU     25.92s WALL (      42 calls)
+     g_psi        :      0.20s CPU      0.20s WALL (      39 calls)
+     cdiaghg      :      0.04s CPU      0.06s WALL (      40 calls)
+
+     Called by h_psi:
+     add_vuspsi   :      0.65s CPU      0.65s WALL (      42 calls)
+
+     General routines
+     calbec       :      0.64s CPU      0.66s WALL (      42 calls)
+     fft          :      0.11s CPU      0.11s WALL (       3 calls)
+     fftw         :     21.50s CPU     21.57s WALL (     712 calls)
+
+
+     PWSCF        :    39.34s CPU        39.64s WALL
+
+
+   This run was terminated on:  15: 2:14  13Jun2014            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+
+     ethr =  1.00E-12,  avg # of iterations = 39.0
+
+     total cpu time spent up to now is       44.9 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 ( 79117 PWs)   bands (ev):
+
+   -28.6777 -13.6035 -11.5385 -11.5385  -8.5587  -1.6465  -1.6465  -0.0627
+     2.3628   2.5311   2.7042   2.7042   2.7887   3.6606   4.8518
+
+     Writing output data file co.save
+
+     init_run     :      1.23s CPU      1.27s WALL (       1 calls)
+     electrons    :     43.26s CPU     43.47s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.24s CPU      0.25s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     43.26s CPU     43.46s WALL (       1 calls)
+     v_of_rho     :      0.17s CPU      0.17s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.02s CPU      0.02s WALL (       1 calls)
+     cegterg      :     41.68s CPU     41.87s WALL (       2 calls)
+
+     Called by *egterg:
+     h_psi        :     29.03s CPU     29.15s WALL (      42 calls)
+     g_psi        :      0.24s CPU      0.24s WALL (      39 calls)
+     cdiaghg      :      0.04s CPU      0.04s WALL (      40 calls)
+
+     Called by h_psi:
+     add_vuspsi   :      0.74s CPU      0.74s WALL (      42 calls)
+
+     General routines
+     calbec       :      0.69s CPU      0.69s WALL (      42 calls)
+     fft          :      0.11s CPU      0.11s WALL (       3 calls)
+     fftw         :     24.48s CPU     24.58s WALL (     712 calls)
+
+
+     PWSCF        :    44.75s CPU        45.04s WALL
+
+
+   This run was terminated on:  15: 2:19  13Jun2014            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
