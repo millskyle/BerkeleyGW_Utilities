@@ -29,6 +29,7 @@ echo "Converting PWSCF binary wavefunction to BerkeleyGW WFN"
 $PW2BGW < pp_in > pp_out
 
 cd $DIR
+cd 2-wfn
 
 mv wfn.complex WFN_$PREFIX
 
