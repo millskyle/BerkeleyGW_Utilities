@@ -8,8 +8,8 @@ ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE run.sh SCRIPT.
 
    echo 'co' > prefix
 
-   *All instances of the string '!PREFIX!' (no quotes) in any file in any directory within ./ will be replaced
-   with this prefix string.
+   *all input files will be copied and the string '!PREFIX!' (no quotes) will be replaced with the contents
+   of the file 'prefix' in the copies.  The calculations will the be run with the copied input files
 
 
 2) Place all input files in the proper directories:  Required files are:
