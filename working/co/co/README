@@ -1,6 +1,9 @@
 
 ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE run.sh SCRIPT.
 
+0) OPTIONAL: run cleanup script top 
+
+
 1) Make sure that the file 'prefix' contains only the system prefix,  ie: 'co'
 
    echo 'co' > prefix
@@ -15,11 +18,13 @@ ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE run.sh SCRIPT.
    2-wfn/in     :  second PWSCF input file
    2-wfn/pp_in  :  pw2bgw conversion input file
 
-3) Run 'run.sh' to do the calculations.  Assuming all goes well, the final wavefunction file will be placed
+3) Make sure all pseudopotential files are present in the directory ABOVE the run.sh directory.  Symbolic
+links will be made to these files.
+
+4) Run 'run.sh' to do the calculations.  Assuming all goes well, the final wavefunction file will be placed
 in the root directory, appended with the prefix.
 
    ./run.sh
-
 
 
 
