@@ -1,7 +1,7 @@
 
 ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE run.sh SCRIPT.
 
-0) OPTIONAL: run cleanup script top 
+0) OPTIONAL: run cleanup script to ensure that remnants of previous runs are not present.
 
 
 1) Make sure that the file 'prefix' contains only the system prefix,  ie: 'co'
