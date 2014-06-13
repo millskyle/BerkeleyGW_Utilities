@@ -19,14 +19,16 @@ cd 1-scf
 ln -s ../../*.UPF ./
 echo "Running first PWSCF calculation"
 $PWSCF < in > out
-cd ..
+cd $DIR
 ln -s "../1-scf/${PREFIX}.save/" "2-wfn/"
 cd 2-wfn/
+ln -s ../../*.UPF ./
 echo "Running second PWSCF calculation"
 $PWSCF < in > out
 echo "Converting PWSCF binary wavefunction to BerkeleyGW WFN"
 $PW2BGW < pp_in > pp_out
 
+cd $DIR
 
 mv wfn.complex WFN_$PREFIX
 
