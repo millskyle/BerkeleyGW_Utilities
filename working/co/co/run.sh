@@ -11,9 +11,18 @@ PW2BGW='/home/kmills/espresso-5.0/bin/pw2bgw.x '
 
 
 
+
+
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 echo "Root directory is $DIR"
+
+
+
+cd $DIR 
+sed -i "s|!PREFIX!|$PREFIX|g" */*
+
 
 cd 1-scf
 ln -s ../../*.UPF ./
@@ -31,7 +40,7 @@ $PW2BGW < pp_in > pp_out
 cd $DIR
 cd 2-wfn
 
-mv wfn.complex WFN_$PREFIX
+mv wfn.complex ../WFN_$PREFIX
 
 
 
