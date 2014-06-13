@@ -1,0 +1,36 @@
+
+ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE link.sh SCRIPT.
+
+0) OPTIONAL: run cleanup script to ensure that remnants of previous runs are not present.
+
+1) Run 'link.sh' to create a symbolic link to the run script (run.sh).  'run.sh' must be run from 
+within the same directory as link.sh, so creating the symbolic link makes it easier to remember to do 
+this, and prevents a lot of copies from being created.
+
+
+2) Make sure that the file 'prefix' contains only the system prefix,  ie: 'co'
+
+   echo 'co' > prefix
+
+   *all input files will be copied and the string '!PREFIX!' (no quotes) will be replaced with the contents
+   of the file 'prefix' in the copies.  The calculations will the be run with the copied input file.
+
+
+3) Place all input files in the proper directories:  Required files are:
+   
+   1-scf/in     :  first PWSCF input file
+   2-wfn/in     :  second PWSCF input file
+   2-wfn/pp_in  :  pw2bgw conversion input file
+
+
+4) Make sure all pseudopotential files are present in the directory ABOVE the run.sh directory.  Symbolic
+links will be made to these files.
+
+
+5) Run 'run.sh' to do the calculations.  Assuming all goes well, the final wavefunction file will be placed
+in the root directory, appended with the prefix.
+
+   ./run.sh
+
+
+
