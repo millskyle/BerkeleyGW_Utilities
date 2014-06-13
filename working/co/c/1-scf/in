@@ -1,5 +1,5 @@
 &control
-   prefix = 'h'
+   prefix = 'co'
    calculation = 'scf'
    restart_mode = 'from_scratch'
    wf_collect = .true.
@@ -12,9 +12,9 @@
 &system
    ibrav = 0
    celldm(1) = 13.228
-   nat = 1
-   ntyp = 1
-   nbnd = 10
+   nat = 2
+   ntyp = 2
+   nbnd = 5
    ecutwfc = 60.0
 /
 &electrons
@@ -32,7 +32,9 @@ CELL_PARAMETERS
        0.000000000   1.000000000   0.000000000
        0.000000000   0.000000000   1.000000000
 ATOMIC_SPECIES
-   H  1.07  H.UPF
+   C  12.011  C.UPF
+   O  15.999  O.UPF
 ATOMIC_POSITIONS bohr
-   H  -1.066000000   0.000000000   0.000000000
+   C  -1.066000000   0.000000000   0.000000000
+   O   1.066000000   0.000000000   0.000000000
 K_POINTS gamma
