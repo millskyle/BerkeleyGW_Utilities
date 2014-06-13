@@ -21,21 +21,23 @@ echo "Root directory is $DIR"
 
 
 cd $DIR 
-sed -i "s|!PREFIX!|$PREFIX|g" */*
 
+for inputfile in `\ls */*in*`; do
+   sed "s|!PREFIX!|$PREFIX|g" < $inputfile > ${inputfile}_new
+done
 
 cd 1-scf
 ln -s ../../*.UPF ./
 echo "Running first PWSCF calculation"
-$PWSCF < in > out
+$PWSCF < in_new > out_new
 cd $DIR
 ln -s "../1-scf/${PREFIX}.save/" "2-wfn/"
 cd 2-wfn/
 ln -s ../../*.UPF ./
 echo "Running second PWSCF calculation"
-$PWSCF < in > out
+$PWSCF < in_new > out_new
 echo "Converting PWSCF binary wavefunction to BerkeleyGW WFN"
-$PW2BGW < pp_in > pp_out
+$PW2BGW < pp_in_new > pp_out_new
 
 cd $DIR
 cd 2-wfn
