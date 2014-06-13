@@ -2,8 +2,9 @@
 currentdir="`pwd`"
 
 
-PREFIX=`tr -d '\n' < prefix`
-echo "Prefix set to $PREFIX"
+
+
+
 
 PWSCF='/home/kmills/espresso-5.0/bin/pw.x  -nk 1 -nd 1 -nb 1 -nt 1 '
 PW2BGW='/home/kmills/espresso-5.0/bin/pw2bgw.x '
@@ -16,6 +17,13 @@ PW2BGW='/home/kmills/espresso-5.0/bin/pw2bgw.x '
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 echo "Root directory is $DIR"
+
+
+if [[ -f prefix ]]; then
+
+
+PREFIX=`tr -d '\n' < prefix`
+echo "Prefix set to $PREFIX"
 
 
 
@@ -46,3 +54,13 @@ mv wfn.complex ../WFN_$PREFIX
 
 
 cd $currentdir
+
+
+else 
+
+echo "You must create a prefix file.  See the README for more information"
+
+fi
+
+
+
