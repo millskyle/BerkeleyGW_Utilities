@@ -1,0 +1,30 @@
+
+ALL PATHS ARE RELATIVE TO THE DIRECTORY CONTAINING THE run.sh SCRIPT.
+
+1) Make sure that the file 'prefix' contains only the system prefix,  ie: 'co'
+
+   echo 'co' > prefix
+
+   *All instances of the string '!PREFIX!' (no quotes) in any file in any directory within ./ will be replaced
+   with this prefix string.
+
+
+2) Place all input files in the proper directories:  Required files are:
+   
+   1-scf/in     :  first PWSCF input file
+   2-wfn/in     :  second PWSCF input file
+   2-wfn/pp_in  :  pw2bgw conversion input file
+
+3) Run 'run.sh' to do the calculations.  Assuming all goes well, the final wavefunction file will be placed
+in the root directory, appended with the prefix.
+
+   ./run.sh
+
+
+
+
+
+
+
+
+
