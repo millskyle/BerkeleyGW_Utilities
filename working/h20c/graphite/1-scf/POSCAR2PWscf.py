@@ -1,10 +1,12 @@
 #!/usr/bin/python
-
+exclude=[]
 import sys
 
 class read_POSCAR(object):
+   global exclude
    x=0; y=1; z=2; lvec=[]
    def __init__(self,filename):
+      x=0;y=1;z=2
       self.infile = []
       for line in open(filename,'r'):
          self.infile.append(line.split())    #fill the infile list with the lines from the file
@@ -12,7 +14,7 @@ class read_POSCAR(object):
       self.lc = float(" ".join(self.infile[1])) #second line is the lattice constant (lc)
       for i in [2,3,4]:
          self.lvec.append([float(j) for j in self.infile[i]])  #Next three lines are lattice vectors
-      self.atoms = infile[5] #sixth line is a list atom types
+      self.atoms = self.infile[5] #sixth line is a list atom types
       self.natoms = 0 #define an attribute to hold the total number of atoms
       self.count_atoms = { 'atomic symbol':'number of type' } #define a dict to hold counts and atomic symbols
       self.atom_type_list=[]  # blank list to hold atom type list
@@ -43,11 +45,14 @@ class read_POSCAR(object):
             float(self.infile[i][z]) * self.coord_scaling[z] ])  #the z-coordinate, scaled
 
 def out(data):
+   global o
    #Simple function to write data to file and print it to stdout.
    o.write(data+"\n")
    print data
 
 def main():
+   global exclude
+   global o
    if len(sys.argv)<3:
       print """
 ERROR!
@@ -57,13 +62,18 @@ ERROR!
        (where <atoms to exclude> is a space separated list of atom types to exclude from the PWSCF input file,
        ie:  "C O" would exclude all carbon and oxygen atoms present in the POSCAR from the output)
 """
+      ThrowError()
 
    if len(sys.argv)>3:
       exclude=sys.argv[3].split()
-   x=0;y=1;z=2
-   o = open(sys.argv[2],'w')
-   s = read_POSCAR('POSCAR')
+   else:
+      exclude=[]
 
+   x=0;y=1;z=2
+   o = open(sys.argv[2],'w') #open the output file for writing
+   s = read_POSCAR('POSCAR') #initialize the POSCAR object (ie: read it and do the processing)
+
+   #start printing the file out.  Options are hard-coded.
    out("&control")
    out("""   prefix = '!PREFIX!'
    calculation = 'scf'
@@ -110,6 +120,7 @@ ERROR!
    out("")
 
 
+#An atomic mass list...verify these before running.
 atomic_masses = {
 "H":1.0079,
 "He":4.0026,
