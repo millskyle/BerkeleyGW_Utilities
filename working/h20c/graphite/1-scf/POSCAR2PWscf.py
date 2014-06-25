@@ -8,20 +8,20 @@ class read_POSCAR(object):
       self.infile = []
       for line in open(filename,'r'):
          self.infile.append(line.split())    #fill the infile list with the lines from the file
-      self.comment = " ".join(self.infile[0])
-      self.lc = float(" ".join(self.infile[1]))
+      self.comment = " ".join(self.infile[0])  #first line is a comment
+      self.lc = float(" ".join(self.infile[1])) #second line is the lattice constant (lc)
       for i in [2,3,4]:
-         self.lvec.append([float(j) for j in self.infile[i]])
-      self.atoms = infile[5]
-      self.natoms = 0
-      self.count_atoms = { 'atomic symbol':'number of type' }
-      self.atom_type_list=[]
-      for i,atom in enumerate(self.atoms):
-         if not atom in exclude:
-            self.count_atoms[self.atoms[i]] = int(self.infile[6][i])
-            for _ in range(int(self.infile[6][i])):
-               self.atom_type_list.append(self.atoms[i])
-            self.natoms+=int(self.infile[6][i])
+         self.lvec.append([float(j) for j in self.infile[i]])  #Next three lines are lattice vectors
+      self.atoms = infile[5] #sixth line is a list atom types
+      self.natoms = 0 #define an attribute to hold the total number of atoms
+      self.count_atoms = { 'atomic symbol':'number of type' } #define a dict to hold counts and atomic symbols
+      self.atom_type_list=[]  # blank list to hold atom type list
+      for i,atom in enumerate(self.atoms): #For each *type* of atom,
+         if not atom in exclude: #if we're not excluding this type of atom
+            self.count_atoms[self.atoms[i]] = int(self.infile[6][i]) #add the count to the dict
+            for _ in range(int(self.infile[6][i])): #add $count instances of the atomic symbol
+               self.atom_type_list.append(self.atoms[i]) #to the symbol list
+            self.natoms+=int(self.infile[6][i]) #add the count of this type to the total atom count
       self.ntyp = len(set(self.atom_type_list))
       if self.infile[7][0][0].upper()=="S": #if selective dynamics
          self.infile.pop(7)  #remove the line that says "selective dynamics"
