@@ -22,31 +22,32 @@ class read_POSCAR(object):
             for _ in range(int(self.infile[6][i])): #add $count instances of the atomic symbol
                self.atom_type_list.append(self.atoms[i]) #to the symbol list
             self.natoms+=int(self.infile[6][i]) #add the count of this type to the total atom count
-      self.ntyp = len(set(self.atom_type_list))
+      self.ntyp = len(set(self.atom_type_list)) #get the number of different atom types
       if self.infile[7][0][0].upper()=="S": #if selective dynamics
-         self.infile.pop(7)  #remove the line that says "selective dynamics"
-      if self.infile[7][0][0].upper() =="D":
-         self.coord_scaling=[ self.lvec[0][0], self.lvec[1][1], self.lvec[2][2] ]
-      elif self.infile[7][0][0].upper() =="C":
+         self.infile.pop(7)  #remove the line that says "selective dynamics" (keeps the line numbers in sync)
+      if self.infile[7][0][0].upper() =="D": #if direct coordinates
+         self.coord_scaling=[ self.lvec[0][x], self.lvec[1][y], self.lvec[2][z] ]   #then all coordinates 
+                                                                                    #must be multiplied by 
+                                                                                    #the lattice vectors
+      elif self.infile[7][0][0].upper() =="C": #if cartesian, then we're going to multply by 1.0.
          self.coord_scaling=[ 1.,1.,1. ]
-      else:
+      else: #if something else, then I don't know what to do so just leave them as-is
          self.coord_scaling=[ 1.,1.,1. ]
 
-      self.position_data = []
-      for i in range(8,8+self.natoms):
+      self.position_data = [] #define list to hold all position data
+      for i in range(8,8+self.natoms): #start at "line 8" and loop over natoms lines
          self.position_data.append([
-            self.atom_type_list[i-8],
-            float(self.infile[i][0]) * self.coord_scaling[0],
-            float(self.infile[i][1]) * self.coord_scaling[1],
-            float(self.infile[i][2]) * self.coord_scaling[2]
-         ])
+            self.atom_type_list[i-8], #the atomic symbol
+            float(self.infile[i][x]) * self.coord_scaling[x], #the x-coordinate, scaled
+            float(self.infile[i][y]) * self.coord_scaling[y], #the y-coordinate, scaled
+            float(self.infile[i][z]) * self.coord_scaling[z] ])  #the z-coordinate, scaled
 
 def out(data):
+   #Simple function to write data to file and print it to stdout.
    o.write(data+"\n")
    print data
 
 def main():
-
    if len(sys.argv)<3:
       print """
 ERROR!
